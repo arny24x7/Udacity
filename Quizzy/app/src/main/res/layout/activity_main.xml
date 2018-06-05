@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/quizzy_bg"
+    tools:context="com.technopark.quizzy.MainActivity"
+    tools:targetApi="16">
+
+    <TextView
+        android:id="@+id/quizzy_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.8"
+        android:fontFamily="cursive"
+        android:text="Quizzy"
+        android:textColor="#009688"
+        android:textSize="50sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/quiz_1_relative_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="80dp"
+                android:alpha="0.6"
+                android:background="#F44336"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="1) When is Independence Day ?"
+                    android:textSize="25sp" />
+
+                <RadioGroup
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radio_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:onClick="onRadioButtonClicked_1"
+                        android:text="20th Sep"
+                        android:textSize="30sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:onClick="onRadioButtonClicked_1"
+                        android:text="15th Aug"
+                        android:textSize="30sp" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/quiz_2_relative_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/quiz_1_relative_view"
+                android:layout_marginTop="50dp"
+                android:alpha="0.6"
+                android:background="#8BC34A"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="2) When is Republic Day ?"
+                    android:textSize="25sp" />
+
+                <RadioGroup
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radio_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:onClick="onRadioButtonClicked_2"
+                        android:text="26th Jan"
+                        android:textSize="30sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:onClick="onRadioButtonClicked_2"
+                        android:text="2nd Apr"
+                        android:textSize="30sp" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/quiz_3_relative_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/quiz_2_relative_view"
+                android:layout_marginTop="50dp"
+                android:alpha="0.6"
+                android:background="#2196F3"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="3) When is Gandhi Jayanti ?"
+                    android:textSize="25sp" />
+
+                <RadioGroup
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radio_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:onClick="onRadioButtonClicked_3"
+                        android:text="2nd Oct"
+                        android:textSize="30sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:onClick="onRadioButtonClicked_3"
+                        android:text="4th Dec"
+                        android:textSize="30sp" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/quiz_4_relative_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/quiz_3_relative_view"
+                android:layout_marginTop="50dp"
+                android:alpha="0.6"
+                android:background="#CDDC39"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="4) When is Christmas Day ?"
+                    android:textSize="25sp" />
+
+                <RadioGroup
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radio_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:onClick="onRadioButtonClicked_4"
+                        android:text="20th Aug"
+                        android:textSize="30sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:onClick="onRadioButtonClicked_4"
+                        android:text="25th Dec"
+                        android:textSize="30sp" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/quiz_5_relative_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/quiz_4_relative_view"
+                android:layout_marginTop="50dp"
+                android:alpha="0.6"
+                android:background="#795548"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="5) When is Easter Day ?"
+                    android:textSize="25sp" />
+
+                <RadioGroup
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radio_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:onClick="onRadioButtonClicked_5"
+                        android:text="1st Apr"
+                        android:textSize="30sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:onClick="onRadioButtonClicked_5"
+                        android:text="30th Feb"
+                        android:textSize="30sp" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/quiz_6_relative_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/quiz_5_relative_view"
+                android:layout_marginTop="50dp"
+                android:alpha="0.6"
+                android:background="#607D8B"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="6) When is Shivaji Jayanti ?"
+                    android:textSize="25sp" />
+
+                <RadioGroup
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radio_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:onClick="onRadioButtonClicked_6"
+                        android:text="27th Jan"
+                        android:textSize="30sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:onClick="onRadioButtonClicked_6"
+                        android:text="19th Feb"
+                        android:textSize="30sp" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/quiz_7_relative_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/quiz_6_relative_view"
+                android:layout_marginTop="50dp"
+                android:alpha="0.6"
+                android:background="#FF9800"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="7) Is New Delhi the capital of India ?"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/edittext_view"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="serif"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/quiz_8_relative_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/quiz_7_relative_view"
+                android:layout_marginTop="50dp"
+                android:alpha="0.6"
+                android:background="#E91E63"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="8) How many days does a Leap Year have ?"
+                    android:textSize="25sp" />
+
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:text="366 Days"
+                        android:textSize="30sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:text="365 Days"
+                        android:textSize="30sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quiz_8_relative_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="#546e7a"
+                android:onClick="submitButton"
+                android:src="@drawable/ic_done_all_black_48dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
