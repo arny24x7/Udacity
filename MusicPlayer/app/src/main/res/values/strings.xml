@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MusicPlayer</string>
+    <string name="Amazon_IAP_API">
+        <u>Amazon_IAP_API Get Started</u> \n\n
+        1> Download the SDK \n\n
+        2> Set Up Your Development Environment: Android Studio \n\n
+        3> Set up App Tester \n\n
+        4> Submit Your App and In-App Items \n\n
+        *For more information, please visit the Amazon IAP API.</string>
+</resources>
