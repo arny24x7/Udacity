@@ -17,4 +17,55 @@
         android:text="This view shows the songs in the current Playlist."
         android:textSize="20sp" />
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp">
+
+        <RelativeLayout
+            android:id="@+id/albums_relative_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/albums_button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_library_music_black_48dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/albums_button_3"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="serif"
+                android:text="ALBUMS"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/now_playing_button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_play_arrow_black_48dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/now_playing_button_3"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="serif"
+                android:text="Play"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
 </RelativeLayout>

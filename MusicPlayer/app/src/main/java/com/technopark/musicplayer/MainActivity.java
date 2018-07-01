@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         ((Button) findViewById(R.id.songs_button)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, SONGS.class);
+                Intent i = new Intent(MainActivity.this, Songs.class);
                 startActivity(i);
             }
         });
@@ -32,39 +32,39 @@ public class MainActivity extends AppCompatActivity {
         ((Button) findViewById(R.id.recent_button)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, RECENT.class);
+                Intent i = new Intent(MainActivity.this, Recent.class);
                 startActivity(i);
             }
         });
 
-        ((Button) findViewById(R.id.albums_button)).setOnClickListener(new View.OnClickListener() {
+        ((Button) findViewById(R.id.albums_button_1)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, ALBUMS.class);
+                Intent i = new Intent(MainActivity.this, Albums.class);
                 startActivity(i);
             }
         });
 
-        ((Button) findViewById(R.id.artists_button)).setOnClickListener(new View.OnClickListener() {
+        ((Button) findViewById(R.id.artists_button_1)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, ARTISTS.class);
+                Intent i = new Intent(MainActivity.this, Artists.class);
                 startActivity(i);
             }
         });
 
-        ((Button) findViewById(R.id.playlist_button)).setOnClickListener(new View.OnClickListener() {
+        ((Button) findViewById(R.id.playlist_button_1)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, PLAYLIST.class);
+                Intent i = new Intent(MainActivity.this, Playlist.class);
                 startActivity(i);
             }
         });
 
-        ((Button) findViewById(R.id.store_button)).setOnClickListener(new View.OnClickListener() {
+        ((Button) findViewById(R.id.store_button_1)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, STORE.class);
+                Intent i = new Intent(MainActivity.this, Store.class);
                 startActivity(i);
             }
         });

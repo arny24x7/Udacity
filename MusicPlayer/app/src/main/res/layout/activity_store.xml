@@ -6,10 +6,25 @@
     android:background="#757575"
     tools:context="com.technopark.musicplayer.MainActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="15sp"
+        android:background="#00796B">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="serif"
+            android:text="@string/Amazon_IAP_API"
+            android:textSize="20sp" />
+    </ScrollView>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:layout_centerVertical="true"
+        android:layout_above="@id/now_playing_relative_view"
+        android:layout_marginBottom="5dp"
         android:background="#00796B">
 
         <Button
@@ -26,9 +41,32 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
             android:fontFamily="serif"
-            android:text="Google Pay API Tutorial"
+            android:text="Amazon IAP API"
             android:textSize="20sp" />
+    </RelativeLayout>
 
+    <RelativeLayout
+        android:id="@+id/now_playing_relative_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp">
+
+        <Button
+            android:id="@+id/now_playing_button_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_play_arrow_black_48dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/now_playing_button_6"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="serif"
+            android:text="Play"
+            android:textSize="20sp" />
     </RelativeLayout>
 
 </RelativeLayout>

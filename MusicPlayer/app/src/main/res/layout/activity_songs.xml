@@ -17,4 +17,56 @@
         android:text="This view shows the list of all the songs currently being played."
         android:textSize="20sp" />
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp">
+
+        <RelativeLayout
+            android:id="@+id/albums_relative_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/store_button_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_shopping_cart_black_48dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/store_button_2"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="serif"
+                android:text="STORE"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/now_playing_button_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_play_arrow_black_48dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/now_playing_button_5"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="serif"
+                android:text="Play"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
 </RelativeLayout>
